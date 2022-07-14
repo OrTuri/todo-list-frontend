@@ -1,5 +1,4 @@
 import style from "./Modal.module.css";
-import { useState } from "react";
 
 const Modal = (props) => {
   const { showModal, deleteItem } = props;

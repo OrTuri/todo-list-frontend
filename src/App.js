@@ -18,7 +18,7 @@ const sendDataToServer = async (data, url, method) => {
 };
 
 const updateDone = (data) => {
-  const res = axios({
+  axios({
     url: `${process.env.REACT_APP_PROXY}/todo/update`,
     method: "PUT",
     data: data,
@@ -35,7 +35,7 @@ const getAllTodo = async () => {
 };
 
 const deleteTask = async (id) => {
-  const res = await axios({
+  await axios({
     url: `${process.env.REACT_APP_PROXY}/todo/delete`,
     method: "DELETE",
     data: id,
